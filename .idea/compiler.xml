@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="uaa" />
+        <module name="uaa-feign" />
+        <module name="product" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth" target="17" />
+      <module name="AuthSso" target="17" />
+      <module name="Feign" target="17" />
+      <module name="ServiceA" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ServiceA" options="-parameters" />
+      <module name="product" options="-parameters" />
+      <module name="uaa" options="-parameters" />
+      <module name="uaa-feign" options="-parameters" />
+    </option>
+  </component>
+</project>
